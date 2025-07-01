@@ -1,6 +1,5 @@
 import mongoose, { Schema, models, model } from "mongoose";
 import bcrypt from "bcryptjs";
-import { scheduler } from "timers/promises";
 
 export interface IUser {
   email: string;

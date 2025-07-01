@@ -13,13 +13,13 @@ if (!cached) {
   cached = global.mongoose = { conn: null, promise: null };
 }
 
-export async function connectToDatabse() {
-  if (cached.conn) cached.conn;
+export async function connectToDatabase() {
+  if (cached.conn) return cached.conn;
 
   if (!cached.promise) {
     const opts={
         maxPoolSize: 10,
-        bufferCommands: true
+        bufferCommands: true // bufferCommands: true(default) means your app will queue database operations while establishing the connection, making it more resilient during startup.
     };
     
    cached.promise= mongoose
