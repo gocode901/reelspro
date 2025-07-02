@@ -1,5 +1,4 @@
-import { IVideo } from "@/models/Video";
-
+import { IVideo } from "@/models/video";
 
 export type VideoFormData = Omit<IVideo, "_id">;
 

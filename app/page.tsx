@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import VideoFeed from "./components/VideoFeed";
-import { IVideo } from "@/models/Video";
+import { IVideo } from "@/models/video";
 import { apiClient } from "@/lib/api-client";
 
 export default function Home() {
